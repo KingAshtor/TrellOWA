@@ -35,52 +35,47 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
-$( function() {
-  $( "#sortable1, #sortable2, #sortable3" ).sortable({
-    connectWith: ".connectedSortable"
-  }).disableSelection();
-} );
+  $(function() {
+    $("#sortable1, #sortable2, #sortable3").sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  });
 </script>
 
 <body>
   <h1>TrellOWA</h1>
 
-
-  <ul id="sortable1" class="connectedSortable">
-    <li class="ui-state-default">Item 1</li>
-    <li class="ui-state-default">Item 2</li>
-    <li class="ui-state-default">Item 3</li>
-    <li class="ui-state-default">Item 4</li>
-    <li class="ui-state-default">Item 5</li>
-  </ul>
-
-  <ul id="sortable2" class="connectedSortable">
-    <li class="ui-state-highlight">Item 1</li>
-    <li class="ui-state-highlight">Item 2</li>
-    <li class="ui-state-highlight">Item 3</li>
-    <li class="ui-state-highlight">Item 4</li>
-    <li class="ui-state-highlight">Item 5</li>
-  </ul>
-
-  <ul id="sortable2" class="connectedSortable">
-    <li class="ui-state-highlight">Item 1</li>
-    <li class="ui-state-highlight">Item 2</li>
-    <li class="ui-state-highlight">Item 3</li>
-    <li class="ui-state-highlight">Item 4</li>
-    <li class="ui-state-highlight">Item 5</li>
-  </ul>
-
-
   <div class="todo">
     <p> TODO </p>
+    <ul id="sortable1" class="connectedSortable">
+      <li class="ui-state-default">Item 1</li>
+      <li class="ui-state-default">Item 2</li>
+      <li class="ui-state-default">Item 3</li>
+      <li class="ui-state-default">Item 4</li>
+      <li class="ui-state-default">Item 5</li>
+    </ul>
   </div>
 
   <div class="doing">
     <p> DOING </p>
+    <ul id="sortable2" class="connectedSortable">
+      <li class="ui-state-highlight">Item 1</li>
+      <li class="ui-state-highlight">Item 2</li>
+      <li class="ui-state-highlight">Item 3</li>
+      <li class="ui-state-highlight">Item 4</li>
+      <li class="ui-state-highlight">Item 5</li>
+    </ul>
   </div>
 
   <div class="done">
     <p> DONE </p>
+    <ul id="sortable2" class="connectedSortable">
+      <li class="ui-state-highlight">Item 1</li>
+      <li class="ui-state-highlight">Item 2</li>
+      <li class="ui-state-highlight">Item 3</li>
+      <li class="ui-state-highlight">Item 4</li>
+      <li class="ui-state-highlight">Item 5</li>
+    </ul>
   </div>
 
 </body>
