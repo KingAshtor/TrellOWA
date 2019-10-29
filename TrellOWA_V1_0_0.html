@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TrellOWA</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  </head>
 
-  <style>
-    </style>
-  <body>
-<h1>TrellOWA List</h1>
+<head>
+  <meta charset="utf-8">
+  <title>TrellOWA</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
 
-<div class="todo">
-<p> TODO </p>
-</div>
+<style>
 
-<div class="doing">
-<p> DOING </p>
-</div>
 
-<div class="done">
-<p> DONE </p>
-</div>
+  #sortable1,
+  #sortable2,
+  #sortable3 {
+    border: 1px solid #eee;
+    width: 142px;
+    min-height: 20px;
+    list-style-type: none;
+    margin: auto;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 10px;
+  }
 
-  </body>
+  #sortable1 li,
+  #sortable2 li,
+  #sortable3 li,
+    {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 120px;
+  }
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $(function() {
+    $("#sortable1, #sortable2, #sortable3").sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  });
+</script>
+
+<body>
+  <h1>TrellOWA</h1>
+
+  <div class="todo">
+    <p> TODO </p>
+    <ul id="sortable1" class="connectedSortable">
+      <li class="ui-state-default">Item 1</li>
+      <li class="ui-state-default">Item 2</li>
+      <li class="ui-state-default">Item 3</li>
+      <li class="ui-state-default">Item 4</li>
+      <li class="ui-state-default">Item 5</li>
+    </ul>
+  </div>
+
+  <div class="doing">
+    <p> DOING </p>
+    <ul id="sortable2" class="connectedSortable">
+      <li class="ui-state-highlight">Item 1</li>
+      <li class="ui-state-highlight">Item 2</li>
+      <li class="ui-state-highlight">Item 3</li>
+      <li class="ui-state-highlight">Item 4</li>
+      <li class="ui-state-highlight">Item 5</li>
+    </ul>
+  </div>
+
+  <div class="done">
+    <p> DONE </p>
+    <ul id="sortable2" class="connectedSortable">
+      <li class="ui-state-highlight">Item 1</li>
+      <li class="ui-state-highlight">Item 2</li>
+      <li class="ui-state-highlight">Item 3</li>
+      <li class="ui-state-highlight">Item 4</li>
+      <li class="ui-state-highlight">Item 5</li>
+    </ul>
+  </div>
+
+</body>
+
 </html>
 
 
