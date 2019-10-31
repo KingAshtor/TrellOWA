@@ -1,0 +1,79 @@
+#sortable1 {
+  border: 1px solid #eee;
+  width: 142px;
+  min-height: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  margin-right: 10px;
+}
+
+#sortable2 {
+  border: 1px solid #eee;
+  width: 142px;
+  min-height: 20px;
+  list-style-type: none;
+  padding: 5px 0 0 0;
+  margin-right: 10px;
+}
+
+#sortable3 {
+  border: 1px solid #eee;
+  width: 142px;
+  min-height: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  margin-right: 10px;
+}
+
+#sortable1 li
+{
+margin: 0 5px 5px 5px;
+padding: 5px;
+font-size: 1.2em;
+width: 120px;
+}
+
+#sortable2 li
+  {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
+
+#sortable3 li
+  {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
+
+.todoMaster {
+  display: inline-block;
+  width: 150px;
+  height: 275px;
+  border: 2px solid;
+  padding: 25px;
+  background: lightgray
+}
+
+.doingMaster {
+  display: inline-block;
+  width: 150px;
+  height: 275px;
+  border: 2px solid;
+  padding: 25px;
+  background: lightgray
+}
+
+.doneMaster {
+  display: inline-block;
+  width: 150px;
+  height: 275px;
+  border: 2px solid;
+  padding: 25px;
+  background: lightgray
+}
