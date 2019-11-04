@@ -8,6 +8,7 @@ body{
   background-color: #1d1d75;
 }
 #sortable1 {
+  color: #800000;
   border: 1px solid #800000;
   width: 142px;
   min-height: 20px;
@@ -18,6 +19,7 @@ body{
 }
 
 #sortable2 {
+  color: #800000;
   border: 1px solid #800000;
   width: 142px;
   min-height: 20px;
@@ -27,6 +29,7 @@ body{
 }
 
 #sortable3 {
+  color: #800000;
   border: 1px solid #800000;
   width: 142px;
   min-height: 20px;
@@ -58,6 +61,7 @@ body{
 }
 
 .todoMaster {
+  color: #800009;
   display: inline-table;
   width: 150px;
   height: 275px;
@@ -67,6 +71,7 @@ body{
 }
 
 .doingMaster {
+  color: #800009;
   display: inline-table;
   width: 150px;
   height: 275px;
@@ -76,6 +81,7 @@ body{
 }
 
 .doneMaster {
+  color: #800009;
   display: inline-table;
   width: 150px;
   height: 275px;
