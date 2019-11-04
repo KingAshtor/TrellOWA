@@ -23,17 +23,17 @@
 
 <body>
   <h1>TrellOWA</h1>
+  <input type="text" id="candidate">
+  <button onclick="addItem()">Add</button>
+  <button onclick="removeItem()">Delete</button>
 
-<!-- Form used for adding, deleteing, and editing objects in the list -->
-  <form>
-    <input type="text" id="txt">
-    <button onclick="addLI()">Add</button>
-    <button onclick="editLI()">Edit</button>
-    <button onclick="deleteLI()">Delete</button>
-  </form>
+  <!-- <form>
+    <input type="text" id="candidate">
+    <button onclick="addItem()">Add</button>
+    <button onclick="removeItem()">Delete</button>
+  </form> -->
+  <!-- <script>
 
-  <!-- Script for adding, deleteing and editing the list items-->
-  <script>
     var inputText = document.getElementById("txt"),
       items = document.querySelectorAll("#list li"),
       tab = [],
@@ -104,7 +104,7 @@
         inputText.value = "";
       }
     }
-  </script>
+  </script> -->
 
   <div class="todoMaster"> <!-- Makes a div layer for all of the parts of todo -->
 
@@ -114,11 +114,6 @@
 
     <div class="todoContent"> <!-- Makes a div layer for the list items of todo -->
       <ul id="sortable1" class="connectedSortable">
-        <li class="ui-state-default">Item 1</li>
-        <li class="ui-state-default">Item 2</li>
-        <li class="ui-state-default">Item 3</li>
-        <li class="ui-state-default">Item 4</li>
-        <li class="ui-state-default">Item 5</li>
       </ul>
     </div>
   </div>
