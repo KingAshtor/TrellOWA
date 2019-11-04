@@ -21,14 +21,16 @@
 
 <body>
   <h1>TrellOWA</h1>
+  <input type="text" id="candidate">
+  <button onclick="addItem()">Add</button>
+  <button onclick="removeItem()">Delete</button>
 
-  <form>
-    <input type="text" id="txt">
-    <button onclick="addLI()">Add</button>
-    <button onclick="editLI()">Edit</button>
-    <button onclick="deleteLI()">Delete</button>
-  </form>
-  <script>
+  <!-- <form>
+    <input type="text" id="candidate">
+    <button onclick="addItem()">Add</button>
+    <button onclick="removeItem()">Delete</button>
+  </form> -->
+  <!-- <script>
     var inputText = document.getElementById("txt"),
       items = document.querySelectorAll("#list li"),
       tab = [],
@@ -99,7 +101,7 @@
         inputText.value = "";
       }
     }
-  </script>
+  </script> -->
 
   <div class="todoMaster">
 
@@ -109,11 +111,6 @@
 
     <div class="todoContent">
       <ul id="sortable1" class="connectedSortable">
-        <li class="ui-state-default">Item 1</li>
-        <li class="ui-state-default">Item 2</li>
-        <li class="ui-state-default">Item 3</li>
-        <li class="ui-state-default">Item 4</li>
-        <li class="ui-state-default">Item 5</li>
       </ul>
     </div>
   </div>
