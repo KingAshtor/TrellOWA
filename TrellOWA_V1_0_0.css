@@ -1,14 +1,20 @@
-h1{
-  border-bottom: 4px solid  #800000;
+button{
+  background-color: #CCFFFF;
+  border-color: #00080f;
+}
+h1 {
+  border-bottom: 4px solid #800000;
   width: 150px;
   border-right: 4px solid #800000;
   background-color: #b92424
 }
-body{
-  background-color: #1d1d75;
+
+body {
+  background-color: #1e237c;
 }
 
 #sortable1 {
+  color: #800000;
   border: 1px solid #800000;
   width: 142px;
   min-height: 20px;
@@ -19,6 +25,7 @@ body{
 }
 
 #sortable2 {
+  color: #800000;
   border: 1px solid #800000;
   width: 142px;
   min-height: 20px;
@@ -28,6 +35,7 @@ body{
 }
 
 #sortable3 {
+  color: #800000;
   border: 1px solid #800000;
   width: 142px;
   min-height: 20px;
@@ -37,54 +45,53 @@ body{
   margin-right: 10px;
 }
 
-#sortable1 li
-{
-margin: 0 5px 5px 5px;
-padding: 5px;
-font-size: 1.2em;
-width: 120px;
-}
-
-#sortable2 li
-  {
+#sortable1 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
   font-size: 1.2em;
   width: 120px;
 }
 
-#sortable3 li
-  {
+#sortable2 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
   font-size: 1.2em;
   width: 120px;
 }
 
+#sortable3 li {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
 
 .todoMaster {
+  color: #800009;
   display: inline-table;
   width: 150px;
   height: 275px;
   border: 2px solid;
   padding: 25px;
-  background: #ff9900
+  background: #ffc200;
 }
 
 .doingMaster {
+  color: #800009;
   display: inline-table;
   width: 150px;
   height: 275px;
   border: 2px solid;
   padding: 25px;
-  background: #ff9900
+  background: #ffab00;
 }
 
 .doneMaster {
+  color: #800009;
   display: inline-table;
   width: 150px;
   height: 275px;
   border: 2px solid;
   padding: 25px;
-  background: #ff9900
+  background: #ff9900;
 }
