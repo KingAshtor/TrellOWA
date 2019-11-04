@@ -52,7 +52,7 @@ width: 120px;
 }
 
 .todoMaster {
-  display: inline-block;
+  display: inline-table;
   width: 150px;
   height: 275px;
   border: 2px solid;
@@ -61,7 +61,7 @@ width: 120px;
 }
 
 .doingMaster {
-  display: inline-block;
+  display: inline-table;
   width: 150px;
   height: 275px;
   border: 2px solid;
@@ -70,7 +70,7 @@ width: 120px;
 }
 
 .doneMaster {
-  display: inline-block;
+  display: inline-table;
   width: 150px;
   height: 275px;
   border: 2px solid;
