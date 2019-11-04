@@ -2,6 +2,12 @@ button{
   background-color: #CCFFFF;
   border-color: #00080f;
 }
+
+input{
+  background-color: #CCFFFF;
+  border-color: #00080f
+}
+
 h1 {
   border-bottom: 4px solid #800000;
   width: 150px;
