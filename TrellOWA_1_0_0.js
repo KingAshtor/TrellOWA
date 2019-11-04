@@ -1,69 +1,70 @@
-var inputText = document.getElementById("txt"),
-                 items = document.querySelectorAll("#list li"),
-                 tab = [], index;
+var inputText = document.getElementById("txt"), 
+  items = document.querySelectorAll("#list li"),
+  tab = [],
+  index;
 
-             // get the selected li index using array
-             // populate array with li values
+// get the selected li index using array
+// populate array with li values
 
-             for(var i = 0; i < items.length; i++){
-                 tab.push(items[i].innerHTML);
-             }
+for (var i = 0; i < items.length; i++) {
+  tab.push(items[i].innerHTML);
+}
 
-             // get li index onclick
-             for(var i = 0; i < items.length; i++){
+// get li index onclick
+for (var i = 0; i < items.length; i++) {
 
-                 items[i].onclick = function(){
-                     index = tab.indexOf(this.innerHTML);
-                     console.log(this.innerHTML + " INDEX = " + index);
-                     // set the selected li value into input text
-                     inputText.value = this.innerHTML;
-                 };
+  items[i].onclick = function() {
+    index = tab.indexOf(this.innerHTML);
+    console.log(this.innerHTML + " INDEX = " + index);
+    // set the selected li value into input text
+    inputText.value = this.innerHTML;
+  };
 
-             }
+}
 
-            function refreshArray()
-            {
-                // clear array
-                tab.length = 0;
-                items = document.querySelectorAll("#list li");
-                // fill array
-                for(var i = 0; i < items.length; i++){
-                 tab.push(items[i].innerHTML);
-               }
-            }
-            function addLI(){
+function refreshArray() {
+  // clear array
+  tab.length = 0;
+  items = document.querySelectorAll("#list li");
+  // fill array
+  for (var i = 0; i < items.length; i++) {
+    tab.push(items[i].innerHTML);
+  }
+}
 
-                var listNode = document.getElementById("list"),
-                    textNode = document.createTextNode(inputText.value),
-                    liNode = document.createElement("LI");
+function addLI() {
 
-                    liNode.appendChild(textNode);
-                    listNode.appendChild(liNode);
+  var listNode = document.getElementById("list"),
+    textNode = document.createTextNode(inputText.value),
+    liNode = document.createElement("LI");
 
-                    refreshArray();
+  liNode.appendChild(textNode);
+  listNode.appendChild(liNode);
 
-                    // add event to the new LI
+  refreshArray();
 
-                    liNode.onclick = function(){
-                     index = tab.indexOf(liNode.innerHTML);
-                     console.log(liNode.innerHTML + " INDEX = " + index);
-                     // set the selected li value into input text
-                     inputText.value = liNode.innerHTML;
-                 };
+  // add event to the new LI
 
-             }
+  liNode.onclick = function() {
+    index = tab.indexOf(liNode.innerHTML);
+    console.log(liNode.innerHTML + " INDEX = " + index);
+    // set the selected li value into input text
+    inputText.value = liNode.innerHTML;
+  };
 
-             function editLI(){
-                 // edit the selected li using input text
-                 items[index].innerHTML = inputText.value;
-                 refreshArray();
-              }
+}
 
-              function deleteLI(){
+function editLI() {
+  // edit the selected li using input text
+  items[index].innerHTML = inputText.value;
+  refreshArray();
+}
 
-                      refreshArray();
-                      if(items.length > 0){
-                          items[index].parentNode.removeChild(items[index]);
-                          inputText.value = "";
-                      }
-              }
+function deleteLI() {
+
+  refreshArray();
+  if (items.length > 0) {
+    items[index].parentNode.removeChild(items[index]);
+    inputText.value = "";
+  }
+}
