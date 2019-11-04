@@ -4,20 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>TrellOWA</title>
+  <!-- Changes the title of our page to TrellOWA -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="TrellOWA_V1_0_0.css" type="text/css" />
+  <link rel="stylesheet" href="TrellOWA_V1_0_0.css" type="text/css"/>
+  <!-- uses the custom company image in the tab -->
 </head>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="TrellOWA_1_0_0.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- starts part of the script from jquery -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- starts part of the script from jquery -->
+<script src="TrellOWA_1_0_0.js"></script> <!-- starts the custom script using bits from jquery and a few other online tutorials-->
 <script>
   $(function() {
     $("#sortable1, #sortable2, #sortable3").sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
   });
-</script>
+</script> <!-- used for the sortable object script from jquery -->
 
 <body>
   <h1>TrellOWA</h1>
@@ -31,6 +33,7 @@
     <button onclick="removeItem()">Delete</button>
   </form> -->
   <!-- <script>
+
     var inputText = document.getElementById("txt"),
       items = document.querySelectorAll("#list li"),
       tab = [],
@@ -103,25 +106,25 @@
     }
   </script> -->
 
-  <div class="todoMaster">
+  <div class="todoMaster"> <!-- Makes a div layer for all of the parts of todo -->
 
-    <div class="todoHeading">
+    <div class="todoHeading"> <!-- Makes a div layer for the heading of the part of todo -->
       <p> TODO </p>
     </div>
 
-    <div class="todoContent">
+    <div class="todoContent"> <!-- Makes a div layer for the list items of todo -->
       <ul id="sortable1" class="connectedSortable">
       </ul>
     </div>
   </div>
 
-  <div class="doingMaster">
+  <div class="doingMaster"> <!-- Makes a div layer for all of the parts of doing -->
 
-    <div class="doingHeading">
+    <div class="doingHeading"> <!-- Makes a div layer for the heading of the part of doing -->
       <p> DOING </p>
     </div>
 
-    <div class="doingContent">
+    <div class="doingContent"> <!-- Makes a div layer for the list items of doing -->
       <ul id="sortable2" class="connectedSortable">
         <li class="ui-state-default">Item 1</li>
         <li class="ui-state-default">Item 2</li>
@@ -132,13 +135,13 @@
     </div>
   </div>
 
-  <div class="doneMaster">
+  <div class="doneMaster"> <!-- Makes a div layer for all of the parts of done -->
 
-    <div class="doneHeading">
+    <div class="doneHeading"> <!-- Makes a div layer for the heading of the part of done -->
       <p> TODO </p>
     </div>
 
-    <div class="doneContent">
+    <div class="doneContent"> <!-- Makes a div layer for the list items of done -->
       <ul id="sortable3" class="connectedSortable">
         <li class="ui-state-default">Item 1</li>
         <li class="ui-state-default">Item 2</li>
