@@ -22,82 +22,91 @@ body {
 #sortable1 {
   color: #800000;
   border: 1px solid #800000;
-  width: 142px;
+  width: 100%;
   min-height: 20px;
   list-style-type: none;
   margin: 0;
   padding: 5px 0 0 0;
   margin-right: 10px;
+  table-layout: fixed;
 }
 
 #sortable2 {
   color: #800000;
   border: 1px solid #800000;
-  width: 142px;
+  width: 100%;
   min-height: 20px;
   list-style-type: none;
   padding: 5px 0 0 0;
   margin-right: 10px;
+  table-layout: fixed;
 }
 
 #sortable3 {
   color: #800000;
   border: 1px solid #800000;
-  width: 142px;
+  width: 100%;
   min-height: 20px;
   list-style-type: none;
   margin: 0;
   padding: 5px 0 0 0;
   margin-right: 10px;
+  table-layout: fixed;
 }
 
 #sortable1 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
   font-size: 1.2em;
-  width: 120px;
+  width: auto;
+  table-layout: fixed;
 }
 
 #sortable2 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
   font-size: 1.2em;
-  width: 120px;
+  width: auto;
+  table-layout: fixed;
 }
 
 #sortable3 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
   font-size: 1.2em;
-  width: 120px;
+  width: auto;
+  table-layout: fixed;
 }
 
 .todoMaster {
   color: #800009;
   display: inline-table;
-  width: 150px;
+  width: 30%;
   height: 275px;
   border: 2px solid;
   padding: 25px;
   background: #ffc200;
+  table-layout: fixed;
 }
 
 .doingMaster {
   color: #800009;
   display: inline-table;
-  width: 150px;
+  width: 30%;
   height: 275px;
   border: 2px solid;
   padding: 25px;
   background: #ffab00;
+  table-layout: fixed;
 }
 
 .doneMaster {
   color: #800009;
   display: inline-table;
-  width: 150px;
+  width: 30%;
   height: 275px;
   border: 2px solid;
   padding: 25px;
   background: #ff9900;
+  table-layout: fixed;
 }
