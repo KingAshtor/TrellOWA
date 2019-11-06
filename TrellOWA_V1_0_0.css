@@ -37,6 +37,7 @@ body {
   width: 100%;
   min-height: 20px;
   list-style-type: none;
+  margin: 0;
   padding: 5px 0 0 0;
   margin-right: 10px;
   table-layout: fixed;
@@ -82,9 +83,9 @@ body {
   color: #800009;
   display: inline-table;
   width: 30%;
-  height: 275px;
+  height: 100%;
   border: 2px solid;
-  padding: 25px;
+  padding: 15px;
   background: #ffc200;
   table-layout: fixed;
 }
@@ -93,9 +94,9 @@ body {
   color: #800009;
   display: inline-table;
   width: 30%;
-  height: 275px;
+  height: 100%;
   border: 2px solid;
-  padding: 25px;
+  padding: 15px;
   background: #ffab00;
   table-layout: fixed;
 }
@@ -104,9 +105,9 @@ body {
   color: #800009;
   display: inline-table;
   width: 30%;
-  height: 275px;
+  height: 100%;
   border: 2px solid;
-  padding: 25px;
+  padding: 15px;
   background: #ff9900;
   table-layout: fixed;
 }
