@@ -3,14 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TrellOWA</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="TrellOWA_V1_0_0.css" type="text/css" />
+  <title>TrellOWA</title> <!-- Sets tab title to TrellOWA -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Links tab icon -->
+  <link rel="stylesheet" href="TrellOWA_V1_0_0.css" type="text/css" /> <!-- Links stylesheet -->
 </head>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="TrellOWA_1_0_0.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- Links code from jquery used to make the three dragable, sortable, coloms -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- Links code from jquery used to make the three dragable, sortable, coloms -->
+<script src="TrellOWA_1_0_0.js"></script> <!-- Links our code heavily based off of an online example, but is modified to our needs. It allows creation and deletion of cards-->
+
+<!-- This script is used to activate the jquery codes, hopefully we can put it in our js document... we wil see -->
 <script>
   $(function() {
     $("#sortable1, #sortable2, #sortable3").sortable({
@@ -22,58 +24,56 @@
 <body>
   <h1>TrellOWA</h1>
 
+  <!-- Used as the inteface to input and delete cards -->
   <div class="inputSection">
     <input type="text" id="candidate">
     <button onclick="addItem()">Add</button>
     <button onclick="removeItem()">Delete</button>
   </div>
 
+  <!-- Overarching class for the todo colom -->
   <div class="todoMaster">
 
+    <!-- Overarching class for the todo heading -->
     <div class="todoHeading">
       <p> To-Do </p>
     </div>
 
+    <!-- Overarching class for all the todo's cards -->
     <div class="todoContent">
-      <ul id="sortable1" class="connectedSortable">
-      </ul>
+      <ul id="sortable1" class="connectedSortable"> </ul>
     </div>
+
   </div>
 
+  <!-- Overarching class for the doing colom -->
   <div class="doingMaster">
 
     <div class="doingHeading">
+      <!-- Overarching class for the doing heading -->
       <p> Doing </p>
     </div>
 
+    <!-- Overarching class for all the doings's cards -->
     <div class="doingContent">
-      <ul id="sortable2" class="connectedSortable">
-        <li class="ui-state-default">Item 1</li>
-        <li class="ui-state-default">Item 2</li>
-        <li class="ui-state-default">Item 3</li>
-        <li class="ui-state-default">Item 4</li>
-        <li class="ui-state-default">Item 5</li>
-      </ul>
+      <ul id="sortable2" class="connectedSortable"> </ul>
     </div>
+
   </div>
 
+  <!-- Overarching class for the todo colom -->
   <div class="doneMaster">
 
+    <!-- Overarching class for the done heading -->
     <div class="doneHeading">
-
       <p> DONE </p>
-
     </div>
 
+    <!-- Overarching class for all the done's cards -->
     <div class="doneContent">
-      <ul id="sortable3" class="connectedSortable">
-        <li class="ui-state-default">Item 1</li>
-        <li class="ui-state-default">Item 2</li>
-        <li class="ui-state-default">Item 3</li>
-        <li class="ui-state-default">Item 4</li>
-        <li class="ui-state-default">Item 5</li>
-      </ul>
+      <ul id="sortable3" class="connectedSortable"> </ul>
     </div>
+
   </div>
 
 </body>
