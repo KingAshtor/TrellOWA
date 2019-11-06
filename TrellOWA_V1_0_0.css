@@ -111,14 +111,3 @@ body {
   background: #ff9900;
   table-layout: fixed;
 }
-
-.clock{
-    color: #ff9900;
-    text-align:center;
-    width:auto;
-    height:auto;
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
-    font-size:36px;
-}
