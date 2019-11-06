@@ -1,18 +1,24 @@
 button {
   background-color: #CCFFFF;
   border-color: #00080f;
+  font-size: 20px;
+  border-radius: 20px;
 }
 
 input {
   background-color: #CCFFFF;
-  border-color: #00080f
+  border-color: #00080f;
+  font-size: 30px;
+  border-radius: 20px;
+  font-family: serif;
 }
 
 h1 {
   border-bottom: 4px solid #800000;
-  width: 150px;
+  width: 225px;
   border-right: 4px solid #800000;
-  background-color: #b92424
+  background-color: #b92424;
+font-size: 50px;
 }
 
 body {
@@ -29,6 +35,8 @@ body {
   padding: 5px 0 0 0;
   margin-right: 10px;
   table-layout: fixed;
+  font-size: 30px;
+  border-radius: 20px;
 }
 
 #sortable2 {
@@ -41,6 +49,8 @@ body {
   padding: 5px 0 0 0;
   margin-right: 10px;
   table-layout: fixed;
+  font-size: 30px;
+  border-radius: 20px;
 }
 
 #sortable3 {
@@ -53,6 +63,8 @@ body {
   padding: 5px 0 0 0;
   margin-right: 10px;
   table-layout: fixed;
+  font-size: 30px;
+  border-radius: 20px;
 }
 
 #sortable1 li {
@@ -88,6 +100,7 @@ body {
   padding: 15px;
   background: #ffc200;
   table-layout: fixed;
+  border-radius: 20px;
 }
 
 .doingMaster {
@@ -99,6 +112,7 @@ body {
   padding: 15px;
   background: #ffab00;
   table-layout: fixed;
+  border-radius: 20px;
 }
 
 .doneMaster {
@@ -110,4 +124,5 @@ body {
   padding: 15px;
   background: #ff9900;
   table-layout: fixed;
+  border-radius: 20px;
 }
