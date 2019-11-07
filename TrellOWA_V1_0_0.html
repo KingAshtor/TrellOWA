@@ -28,7 +28,7 @@
   var s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =
+  document.getElementById('time').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
@@ -39,7 +39,12 @@ function checkTime(i) {
 </script>
 
 <body onload="startTime()">
-  <h1>TrellOWA</h1>
+
+  <h1>
+     TrellOWA  <div id="time"></div>
+
+    </h1>
+
 
 
   <!-- Used as the inteface to input and delete cards -->
@@ -49,6 +54,10 @@ function checkTime(i) {
 
   <div class='inputSection2'>
     <input type='text' id='desc' value='Input Description'>
+  </div>
+
+  <div class='inputSection3'>
+    <input type='text' id='time' value='Time'>
     <button onclick='addItem()'>Add</button>
     <button onclick='removeItem()'>Delete</button>
     <!-- <button onclick='listSave()'>Save</button>
