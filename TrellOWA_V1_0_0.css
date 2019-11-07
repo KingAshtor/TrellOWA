@@ -3,6 +3,7 @@ button {
   border-color: #00080f;
   font-size: 20px;
   border-radius: 20px;
+  font-family: courier;
 }
 
 input {
@@ -10,19 +11,25 @@ input {
   border-color: #00080f;
   font-size: 30px;
   border-radius: 20px;
-  font-family: serif;
+  font-family: courier;
 }
 
 h1 {
   border-bottom: 4px solid #800000;
-  width: 225px;
+  width: 250px;
   border-right: 4px solid #800000;
   background-color: #b92424;
-font-size: 50px;
+  font-size: 50px;
+  font-family: courier;
 }
 
 body {
   background-color: #1e237c;
+}
+
+p {
+  font-size: 20px;
+  font-family: courier;
 }
 
 #sortable1 {
@@ -35,8 +42,9 @@ body {
   padding: 5px 0 0 0;
   margin-right: 10px;
   table-layout: fixed;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 20px;
+  font-family: courier;
 }
 
 #sortable2 {
@@ -49,8 +57,9 @@ body {
   padding: 5px 0 0 0;
   margin-right: 10px;
   table-layout: fixed;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 20px;
+  font-family: courier;
 }
 
 #sortable3 {
@@ -63,32 +72,36 @@ body {
   padding: 5px 0 0 0;
   margin-right: 10px;
   table-layout: fixed;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 20px;
+  font-family: courier;
 }
 
 #sortable1 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
-  font-size: 1.2em;
+  font-size: 20px;
   width: auto;
   table-layout: fixed;
+  font-family: courier;
 }
 
 #sortable2 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
-  font-size: 1.2em;
+  font-size: 20px;
   width: auto;
   table-layout: fixed;
+  font-family: courier;
 }
 
 #sortable3 li {
   margin: 0 5px 5px 5px;
   padding: 5px;
-  font-size: 1.2em;
+  font-size: 20px;
   width: auto;
   table-layout: fixed;
+  font-family: courier;
 }
 
 .todoMaster {
