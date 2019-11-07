@@ -9,7 +9,7 @@ button {
 input {
   background-color: #CCFFFF;
   border-color: #00080f;
-  font-size: 30px;
+  font-size: 23px;
   border-radius: 20px;
   font-family: courier;
 }
@@ -21,6 +21,7 @@ h1 {
   background-color: #b92424;
   font-size: 50px;
   font-family: courier;
+  color: #ffab00;
 }
 
 body {
@@ -45,6 +46,7 @@ p {
   font-size: 20px;
   border-radius: 20px;
   font-family: courier;
+  background: #ea9311;
 }
 
 #sortable2 {
@@ -60,6 +62,7 @@ p {
   font-size: 20px;
   border-radius: 20px;
   font-family: courier;
+    background: #ea9311;
 }
 
 #sortable3 {
@@ -75,6 +78,7 @@ p {
   font-size: 20px;
   border-radius: 20px;
   font-family: courier;
+  background: #ea9311;
 }
 
 #sortable1 li {
@@ -111,7 +115,7 @@ p {
   height: 100%;
   border: 2px solid;
   padding: 15px;
-  background: #ffc200;
+  background: #ffab00;
   table-layout: fixed;
   border-radius: 20px;
 }
@@ -135,7 +139,14 @@ p {
   height: 100%;
   border: 2px solid;
   padding: 15px;
-  background: #ff9900;
+  background: #ffab00;
   table-layout: fixed;
   border-radius: 20px;
+}
+
+#time{
+  color: #ffab00;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
 }
