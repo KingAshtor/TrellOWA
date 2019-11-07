@@ -11,7 +11,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- Links code from jquery used to make the three dragable, sortable, coloms -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- Links code from jquery used to make the three dragable, sortable, coloms -->
 <script src="TrellOWA_1_0_0.js"></script> <!-- Links our code heavily based off of an online example, but is modified to our needs. It allows creation and deletion of cards-->
-<script src="saveList"> </script>
+<!-- <script src="saveList.js"> </script> -->
 
 <!-- This script is used to activate the jquery codes, hopefully we can put it in our js document... we wil see -->
 <script>
@@ -51,7 +51,8 @@ function checkTime(i) {
     <input type='text' id='desc' value='Input Description'>
     <button onclick='addItem()'>Add</button>
     <button onclick='removeItem()'>Delete</button>
-    <button onclick='listSave()'>Save</button>+
+    <!-- <button onclick='listSave()'>Save</button>
+    <button onclick='listLoad()'>Load</button> -->
   </div>
 
   <!-- Overarching class for the todo colom -->
@@ -101,7 +102,7 @@ function checkTime(i) {
   </div>
 
   <div id="txt"></div>
-  
+
 </body>
 
 </html>
