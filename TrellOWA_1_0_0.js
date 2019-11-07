@@ -15,5 +15,9 @@ function removeItem() {
   var ul = document.getElementById('sortable1'); //finds point, sortable 1 list
   var candidate = document.getElementById('candidate'); //sets the list area
   var item = document.getElementById(candidate.value); //sets the variable item equal to the value of the input
+  var item2 = document.getElementById(desc.value);
+  var item3 = document.getElementById(time.value);
   item.parentNode.removeChild(item); //removes the list item from anywhere in any list (parentNode)
+  item.parentNode.removeChild(item2);
+  item.parentNode.removeChild(item3);
 }
