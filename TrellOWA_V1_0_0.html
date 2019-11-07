@@ -28,7 +28,7 @@
   var s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('time').innerHTML =
+  document.getElementById('timeShow').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
@@ -41,7 +41,7 @@ function checkTime(i) {
 <body onload="startTime()">
 
   <h1>
-     TrellOWA  <div id="time"></div>
+     TrellOWA  <div id="timeShow"></div>
 
     </h1>
 
